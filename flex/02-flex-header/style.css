@@ -2,29 +2,6 @@
   font-family: monospace;
   background: papayawhip;
 }
-.header.container {
-  /**here lies the flex container code**/
-  
-  display: flex;
-padding: 8px;
-align-items: center;
-  justify-content: space-between;
-  
-}
-ul { display: flex ;
-  margin: 0; 
-  padding: 0;
-  gap: 8px ;
-  
-
-
-
-
-}
-
-
-
-
 
 .logo {
   font-size: 48px;
