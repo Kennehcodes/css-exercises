@@ -1,3 +1,4 @@
+/** I was so confused by this so I decided to re-write line by line from the solution and visually see changes**/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 html, body {
@@ -7,60 +8,111 @@ html, body {
 body {
   font-family: Roboto, sans-serif;
   margin: 0;
-  background: #aaa;
-  color: #333;
-  /* I'll give you this one for free lol */
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  background: #aac;
+  color: #111;
+/**flex let's flex it**
+this snippit below controlled the placement of the whitebox**/
+display: flex;
+align-items: center; 
+justify-content: center;
 }
 
 .modal {
-  background: white;
-  width: 480px;
-  border-radius: 10px;
-  box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  background: ivory; 
+  width: 700px;
+  border-radius: 32px;
+  box-shadow: 2px 4px 16px rgba(0, 0, 0, 0.3);
+
+/**flex the problem
+siplay flex- smashed all the stuff into the box kinda**/
+display:flex;
+/** lets add some spacers**/
+gap: 20px; 
+/**gap added some space in the content areas**/
+padding: 20px;
+border: solid 10px black;
+/**padding added some space as a border**/
+
 }
 
 .icon {
-  color: royalblue;
-  font-size: 26px;
+  color: rgb(rgb(50, 95, 192), green, blue);
+  font-size: 26px; 
   font-weight: 700;
-  background: lavender;
+  background: royalblue;
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  display: flex;
+/**flex again for good measure, this
+ snazzy stuff shows 
+off the centering of the ! window 
+and gets the stuff in the circle.
+**/
+display: flex; 
+align-items: center;
+justify-content: center;
+
+/**flex the problem**/
+flex-shrink: 0;
+/**we didn't want a smashed up circle, I guess flex sets 
+shrink as default on, so we want it off.**/
+
+}
+.header
+{ 
+  /**flex the problem**/
+  display:flex;
+  /**this put all the stuff to the right of the exclam. 
+  together, and in a more cohesive spot**/
   align-items: center;
-  justify-content: center;
+  /**this smashed text together more**/
+  justify-content: space-between;
+  /**this was the ticket for getting that x to the right**/
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  /**this margin bottom gave us space after the title**/
 }
 
+.text {
+
+  /**flex the problem**/
+  margin-bottom: 20px; 
+  /**this margin bottom gave us space after
+   the text and before the buttons**/
+  
+  }
+
 .close-button {
-  background: #eee;
+  background: #ddd;
   border-radius: 50%;
-  color: #888;
-  font-weight: 400;
-  font-size: 16px;
-  height: 24px;
+  color: darkslategrey;
+  font-weight: 400px;
+  font-size: 16px; 
+  height: 24px; 
   width: 24px;
-  display: flex;
+  /**flex again all, this put the x in it's shell**/
+
+  display: flex; 
   align-items: center;
-  justify-content: center;
+  justify-content:center;
 }
 
 button {
-  padding: 8px 16px;
-  border-radius: 8px;
+  padding: 10px 16px; 
+  border-radius: 8px ;
 }
 
 button.continue {
-  background: royalblue;
-  border: 1px solid royalblue;
-  color: white;
+  background: deeppink;
+  border: 4px solid maroon; 
+  color: peachpuff;
 }
 
 button.cancel {
-  background: white;
-  border: 1px solid #ddd;
-  color: royalblue;
+  background: pink;
+  border:5px solid rgb(130, 130, 190);
+  color: black; 
 }
+
+
